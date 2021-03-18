@@ -5,7 +5,10 @@ Run the following:
  
 	cd app-folder-name
 	docker-build -rm -t [name-your-app] ./init
+
 To run the app:	
+
 	cd app-folder-name/compose
 	docker-compose up
 	
+More updates coming soon.
