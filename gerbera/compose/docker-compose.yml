@@ -1,0 +1,12 @@
+---
+version: "2.1"
+services:
+  gerbera:
+    image: jyotirmoyc/gerbera:latest
+    container_name: gerbera
+    network_mode: host
+    environment: 
+      - TZ=Asia/Kolkata
+    volumes:
+      - /mnt/storage:/content
+    restart: unless-stopped
