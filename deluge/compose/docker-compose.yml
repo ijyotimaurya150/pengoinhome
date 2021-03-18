@@ -1,0 +1,15 @@
+---
+version: "2.1"
+services:
+  deluge:
+    image: jyotirmoyc/deluge:latest
+    container_name: deluge
+    ports:
+      - 8112:8112
+      - 58846:58846
+      - 58946:58946
+    environment: 
+      - TZ=Asia/Kolkata
+    volumes:
+      - /mnt/storage:/Downloads
+    restart: unless-stopped
