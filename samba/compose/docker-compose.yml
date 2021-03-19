@@ -1,0 +1,12 @@
+---
+version: "2.1"
+services:
+  samba:
+    image: jyotirmoyc/samba:latest
+    container_name: samba
+    ports:
+      - 445:445
+    environment: 
+      - TZ=Asia/Kolkata
+    volumes:
+      - /mnt/storage:/Drive
