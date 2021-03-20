@@ -1,0 +1,17 @@
+FROM ubuntu:latest
+LABEL version=0.1
+RUN apt-get update
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y apache2 php sqlite3 
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y wget libapache2-mod-php php-zip php-xml php-curl php-mbstring php-sqlite3 php-gd
+RUN service apache2 start
+RUN mkdir /web
+RUN mkdir /web/html
+RUN wget https://download.nextcloud.com/server/installer/setup-nextcloud.php
+COPY setup-nextcloud.php /root/files/setup-nextcloud.php
+COPY index.html /root/files/index.html
+COPY apache2.conf /etc/apache2/apache2.conf
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY startscript.sh /root/startscript.sh
+EXPOSE 80
+VOLUME /web/html
+ENTRYPOINT ["./root/startscript.sh"]
