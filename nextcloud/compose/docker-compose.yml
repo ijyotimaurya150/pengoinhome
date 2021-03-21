@@ -10,3 +10,4 @@ services:
       - TZ=Asia/Kolkata
     volumes:
       - /mnt/storage:/web/html
+    restart: unless-stopped
