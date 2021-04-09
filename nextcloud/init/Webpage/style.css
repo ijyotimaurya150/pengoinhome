@@ -1,0 +1,41 @@
+body {
+  font-family: "Kumbh Sans", cursive;
+  color: black;
+  background-image: url(./images/Spectrum-Gradient.svg);
+  background-size: cover;
+}
+ul {
+  width: 30%;
+  height: 20%;
+  margin: auto;
+  margin-top: 10%;
+  text-align: center;
+}
+li {
+  padding: 5%;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.308);
+  border: 2px solid rgba(255, 255, 255, 0.664);
+  border-radius: 40px;
+  list-style-type: none;
+  box-shadow: 2px 4px 3px #1111118f;
+}
+li:hover {
+  font-size: larger;
+  border: 2px solid rgba(8, 1, 1, 0.664);
+}
+li:nth-child(1) {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+li:nth-child(1):hover {
+  font-size: inherit;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#girl {
+  transform: scaleX(-1);
+}
