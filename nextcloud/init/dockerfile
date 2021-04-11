@@ -8,7 +8,7 @@ RUN mkdir /web
 RUN mkdir /web/html
 RUN wget https://download.nextcloud.com/server/installer/setup-nextcloud.php
 RUN cp setup-nextcloud.php /root/files/setup-nextcloud.php
-COPY index.html /root/files/index.html
+COPY Webpage/ /root/files
 COPY apache2.conf /etc/apache2/apache2.conf
 COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
 COPY startscript.sh /root/startscript.sh
