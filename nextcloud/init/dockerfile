@@ -6,12 +6,14 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y wget libapache2-mod-php 
 RUN service apache2 start
 RUN mkdir /web
 RUN mkdir /web/html
+RUN mkdir /root/files
 RUN wget https://download.nextcloud.com/server/installer/setup-nextcloud.php
 RUN cp setup-nextcloud.php /root/files/setup-nextcloud.php
 COPY Webpage/ /root/files
 COPY apache2.conf /etc/apache2/apache2.conf
 COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
 COPY startscript.sh /root/startscript.sh
+RUN chmod +xxx /root/startscript.sh
 EXPOSE 80
 VOLUME /web/html
 ENTRYPOINT ["./root/startscript.sh"]
