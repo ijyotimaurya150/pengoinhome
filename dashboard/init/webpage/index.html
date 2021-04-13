@@ -24,7 +24,7 @@
         pengoinHome
       </div>
       <div class="box first">
-        <a href="https://www.google.com/" target="_blank">
+        <a id="deluge" target="_blank">
           <table>
             <tr>
               <td>
@@ -41,7 +41,7 @@
         </a>
       </div>
       <div class="box second">
-        <a href="https://www.google.com/" target="_blank">
+        <a id="gerbera" target="_blank">
           <table>
             <tr>
               <td>
@@ -53,7 +53,7 @@
         </a>
       </div>
       <div class="box third">
-        <a id="trans" target="_blank">
+        <a id="nextcloud" target="_blank">
           <table>
             <tr>
               <td>
@@ -89,7 +89,7 @@
         </a>
       </div>
       <div class="box sixth">
-        <a href="https://www.google.com/" target="_blank">
+        <a id="pihole" target="_blank">
           <table>
             <tr>
               <td>
@@ -106,7 +106,7 @@
         </a>
       </div>
       <div class="box seventh">
-        <a href="https://www.google.com/" target="_blank">
+        <a id="portrainer" target="_blank">
           <table>
             <tr>
               <td>
@@ -122,7 +122,11 @@
       </div>
     </div>
     <script>
-      document.getElementById('trans').href="http://"+window.location.hostname+":80";
+      document.getElementById('deluge').href="http://"+window.location.hostname+":8112";
+      document.getElementById('gerbera').href="http://"+window.location.hostname+":49152";
+      document.getElementById('nextcloud').href="http://"+window.location.hostname+":81";
+      document.getElementById('pihole').href="http://"+window.location.hostname+":80";
+      document.getElementById('portainer').href="http://"+window.location.hostname+":9000";
  </script>
   </body>
 </html>
