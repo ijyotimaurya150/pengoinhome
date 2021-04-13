@@ -77,13 +77,13 @@
         </a>
       </div>
       <div class="box fifth">
-        <a href="https://www.google.com/" target="_blank">
+        <a id="code" target="_blank">
           <table>
             <tr>
               <td>
-                <img src="./images/5.png" alt="" width="60px" height="100px" />
+                <img src="./images/code.png" alt="" width="60px" height="100px" />
               </td>
-              <td colspan="2">Wireguard</td>
+              <td colspan="2">code-server</td>
             </tr>
           </table>
         </a>
@@ -118,7 +118,16 @@
         </a>
       </div>
       <div class="box eighth">
-        <a href="https://www.google.com/" target="_blank">+ </a>
+        <a id="cockpit" target="_blank">
+          <table>
+            <tr>
+              <td>
+                <img src="./images/cockpit.png" alt="" width="70px" height="100px" />
+              </td>
+              <td colspan="2">cockpit</td>
+            </tr>
+          </table>
+        </a>
       </div>
     </div>
     <script>
@@ -127,6 +136,8 @@
       document.getElementById('nextcloud').href="http://"+window.location.hostname+":81";
       document.getElementById('pihole').href="http://"+window.location.hostname+":80";
       document.getElementById('portainer').href="http://"+window.location.hostname+":9000";
+      document.getElementById('code').href="https://"+window.location.hostname;
+      document.getElementById('cockpit').href="http://"+window.location.hostname+":9090";
  </script>
   </body>
 </html>
