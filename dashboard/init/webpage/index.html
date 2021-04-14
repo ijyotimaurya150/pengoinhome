@@ -24,7 +24,7 @@
         pengoinHome
       </div>
       <div class="box first">
-        <a href="https://www.google.com/" target="_blank">
+        <a id="deluge" target="_blank">
           <table>
             <tr>
               <td>
@@ -41,7 +41,7 @@
         </a>
       </div>
       <div class="box second">
-        <a href="https://www.google.com/" target="_blank">
+        <a id="gerbera" target="_blank">
           <table>
             <tr>
               <td>
@@ -53,7 +53,7 @@
         </a>
       </div>
       <div class="box third">
-        <a href="https://www.google.com/" target="_blank">
+        <a id="nextcloud" target="_blank">
           <table>
             <tr>
               <td>
@@ -77,19 +77,19 @@
         </a>
       </div>
       <div class="box fifth">
-        <a href="https://www.google.com/" target="_blank">
+        <a id="code" target="_blank">
           <table>
             <tr>
               <td>
-                <img src="./images/5.png" alt="" width="60px" height="100px" />
+                <img src="./images/code.png" alt="" width="60px" height="100px" />
               </td>
-              <td colspan="2">Wireguard</td>
+              <td colspan="2">code-server</td>
             </tr>
           </table>
         </a>
       </div>
       <div class="box sixth">
-        <a href="https://www.google.com/" target="_blank">
+        <a id="pihole" target="_blank">
           <table>
             <tr>
               <td>
@@ -106,7 +106,7 @@
         </a>
       </div>
       <div class="box seventh">
-        <a href="https://www.google.com/" target="_blank">
+        <a id="portainer" target="_blank">
           <table>
             <tr>
               <td>
@@ -118,8 +118,26 @@
         </a>
       </div>
       <div class="box eighth">
-        <a href="https://www.google.com/" target="_blank">+ </a>
+        <a id="cockpit" target="_blank">
+          <table>
+            <tr>
+              <td>
+                <img src="./images/cockpit.png" alt="" width="70px" height="100px" />
+              </td>
+              <td colspan="2">cockpit</td>
+            </tr>
+          </table>
+        </a>
       </div>
     </div>
+    <script>
+      document.getElementById('deluge').href="http://"+window.location.hostname+":8112";
+      document.getElementById('gerbera').href="http://"+window.location.hostname+":49152";
+      document.getElementById('nextcloud').href="http://"+window.location.hostname+":81";
+      document.getElementById('pihole').href="http://"+window.location.hostname+":80/admin";
+      document.getElementById('portainer').href="http://"+window.location.hostname+":9000";
+      document.getElementById('code').href="https://"+window.location.hostname;
+      document.getElementById('cockpit').href="http://"+window.location.hostname+":9090";
+ </script>
   </body>
 </html>

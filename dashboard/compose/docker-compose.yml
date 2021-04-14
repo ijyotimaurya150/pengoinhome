@@ -1,0 +1,14 @@
+---
+    version: "2.1"
+    services:
+      dashboard:
+        image: jyotirmoyc/dashboard:latest
+        container_name: dashboard
+        ports:
+          - 8080:80
+        environment: 
+          - TZ=Asia/Kolkata
+        volumes:
+          - /mnt/storage:/web/html
+        restart: unless-stopped
+    

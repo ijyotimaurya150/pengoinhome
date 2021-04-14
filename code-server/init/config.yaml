@@ -1,0 +1,4 @@
+bind-addr: 0.0.0.0:443
+auth: password
+password: helloWorld
+cert: true

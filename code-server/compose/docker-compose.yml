@@ -1,0 +1,13 @@
+---
+    version: "2.1"
+    services:
+      codeserver:
+        image: jyotirmoyc/codeserver:latest
+        container_name: codeserver
+        ports:
+          - 443:443
+        environment:
+          - TZ=Asia/Kolkata
+        volumes:
+          - /mnt/storage/code:/root/.local/share/code-server
+        restart: unless-stopped

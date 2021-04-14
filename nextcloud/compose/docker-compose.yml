@@ -1,13 +1,14 @@
 ---
-version: "2.1"
-services:
-  nextcloud:
-    image: jyotirmoyc/nextcloud:latest
-    container_name: nextcloud
-    ports:
-      - 80:80
-    environment: 
-      - TZ=Asia/Kolkata
-    volumes:
-      - /mnt/storage:/web/html
-    restart: unless-stopped
+  version: "2.1"
+  services:
+    nextcloud:
+      image: jyotirmoyc/nextcloud:latest
+      container_name: nextcloud
+      ports:
+        - 81:80
+      environment: 
+        - TZ=Asia/Kolkata
+      volumes:
+        - /mnt/storage:/web/html
+      restart: unless-stopped
+  
