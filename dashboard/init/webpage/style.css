@@ -1,6 +1,11 @@
 body {
-  background-image: url(./images/Spectrum-Gradient.svg);
+  background-image: url(https://source.unsplash.com/1920x1080/?gradient);
+
+  /* background-image: url(https://source.unsplash.com/random/1920x1080); */
+  /* background-image: url(./images/Spectrum-Gradient.svg); */
   background-size: cover;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
   margin: 0;
   font-family: "Comfortaa", cursive;
 }
@@ -15,7 +20,6 @@ body {
   column-gap: 30px;
   row-gap: 30px;
   height: 100vh;
-  /* background-color: black; */
 }
 .logo {
   grid-column: 1 / span 2;
@@ -28,24 +32,36 @@ body {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
+  text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff5e;
+}
+.stats {
+  grid-column: 7 / span 2;
+  grid-row: 1 / span 2;
+  font-size: 1.3rem;
+  align-items: center;
+  margin: auto;
+  font-weight: 600;
+  background-color: #ffffff75;
+  border-radius: 1rem;
+  padding: 0.5rem;
 }
 .box {
   display: flex;
   flex-direction: column;
   padding: 30px;
-  border-radius: 7px;
+  border-radius: 13px 50px;
   box-shadow: 0 0.5em 1em rgba(76, 78, 97, 0.2);
-  background-color: #00000054;
+  background-color: #ffffff23;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.2rem;
   font-weight: 500;
   justify-content: center;
   padding: 5px;
   border-top: 4px solid #45d3d3;
-  border-radius: 7px;
+  /* border-radius?: 7px; */
 }
 .box:hover {
-  background-color: #ffffff23;
+  background-color: #ffffff75;
   box-shadow: 0 0.75em 1em rgba(0, 0, 0, 0.747);
   /* font-size: larger; */
   /* border-top: 2px solid rgba(8, 1, 1, 0.664); */
