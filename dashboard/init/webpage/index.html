@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Penguin Home</title>
+    <title>Pengoin Home</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -22,6 +22,14 @@
           height="180px"
         />
         pengoinHome
+      </div>
+      <div class="stats">
+        <p>
+          System Temperature: 34C <br />
+          CPU Usage: 34% <br />
+          Memory Usage: 12% <br />
+          Disk Usage: 12%(3.2G)
+        </p>
       </div>
       <div class="box first">
         <a id="deluge" target="_blank">
@@ -69,9 +77,14 @@
           <table>
             <tr>
               <td>
-                <img src="./images/4.png" alt="" width="90px" height="100px" />
+                <img
+                  src="./images/4.1.png"
+                  alt=""
+                  width="120px"
+                  height="40px"
+                />
               </td>
-              <td colspan="2">FreeNAS</td>
+              <td colspan="2">Samba</td>
             </tr>
           </table>
         </a>
@@ -81,7 +94,12 @@
           <table>
             <tr>
               <td>
-                <img src="./images/code.png" alt="" width="60px" height="100px" />
+                <img
+                  src="./images/code.png"
+                  alt=""
+                  width="60px"
+                  height="80px"
+                />
               </td>
               <td colspan="2">code-server</td>
             </tr>
@@ -122,7 +140,12 @@
           <table>
             <tr>
               <td>
-                <img src="./images/cockpit.png" alt="" width="70px" height="100px" />
+                <img
+                  src="./images/cockpit.png"
+                  alt=""
+                  width="70px"
+                  height="100px"
+                />
               </td>
               <td colspan="2">cockpit</td>
             </tr>
@@ -131,13 +154,20 @@
       </div>
     </div>
     <script>
-      document.getElementById('deluge').href="http://"+window.location.hostname+":8112";
-      document.getElementById('gerbera').href="http://"+window.location.hostname+":49152";
-      document.getElementById('nextcloud').href="http://"+window.location.hostname+":81";
-      document.getElementById('pihole').href="http://"+window.location.hostname+":80/admin";
-      document.getElementById('portainer').href="http://"+window.location.hostname+":9000";
-      document.getElementById('code').href="https://"+window.location.hostname;
-      document.getElementById('cockpit').href="http://"+window.location.hostname+":9090";
- </script>
+      document.getElementById("deluge").href =
+        "http://" + window.location.hostname + ":8112";
+      document.getElementById("gerbera").href =
+        "http://" + window.location.hostname + ":49152";
+      document.getElementById("nextcloud").href =
+        "http://" + window.location.hostname + ":81";
+      document.getElementById("pihole").href =
+        "http://" + window.location.hostname + ":80/admin";
+      document.getElementById("portainer").href =
+        "http://" + window.location.hostname + ":9000";
+      document.getElementById("code").href =
+        "https://" + window.location.hostname;
+      document.getElementById("cockpit").href =
+        "http://" + window.location.hostname + ":9090";
+    </script>
   </body>
 </html>
